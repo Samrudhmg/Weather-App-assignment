@@ -4,7 +4,7 @@
   color: #f0f0f0;
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
-  background-color: #ffffff3a;
+
   backdrop-filter: blur(15px);
   font-family: "pp mori";
 }
