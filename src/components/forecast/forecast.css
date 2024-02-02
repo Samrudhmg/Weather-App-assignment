@@ -1,80 +1,79 @@
 .title {
-    font-size: 40px;
-    font-weight: 700;
-    color: #f0f0f0;
-    -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: rgb(0, 0, 0);
-    background-color: #ffffff3a;
-    backdrop-filter: blur(15px);
-    font-family: "pp mori";
-  }
-  
-  .daily-item {
-    background-color: #f2f2f2;
-    border-radius: 15px;
-    height: 40px;
-    margin: 5px;
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    font-size: 14px;
-    padding: 5px 20px;
-    font-family: "pp mori";
-  }
-  
-  .icon-small {
-    width: 40px;
-  }
-  
-  .daily-item .day {
-    cursor: inherit;
-    color: #000000;
-    flex: 1 1;
-    font-weight: 600;
-    margin-left: 15px;
-    font-family: "pp mori";
-  }
-  
-  .description {
-    cursor: inherit;
-    flex: 1 1;
-    margin-right: 15px;
-    text-align: right;
-  }
-  
-  .min-max {
-    color: #000000;
-  }
-  
-  .daily-details-grid {
-    grid-row-gap: 0;
-    grid-column-gap: 15px;
-    -webkit-column-gap: 15px;
-    column-gap: 15px;
-    display: grid;
-    flex: 1 1;
-    grid-template-columns: auto auto;
-    padding: 5px 15px;
-    row-gap: 0;
-    backdrop-filter: blur(2px);
+  font-size: 40px;
+  font-weight: 700;
+  color: #f0f0f0;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  background-color: #ffffff3a;
+  backdrop-filter: blur(15px);
+  font-family: "pp mori";
+}
 
-    border-radius: 12px;
-    font-size: 1.2rem;
-    mix-blend-mode:hard-light;
-  }
-  
-  .daily-details-grid-item {
-    align-items: center;
-    display: flex;
-    height: 30px;
-    justify-content: space-between;
-    
-  }
-  
-  .daily-details-grid-item label:first-child {
-    color: #f8f8f8;
-  }
-  
-  .daily-details-grid-item label:last-child {
-    color: #ffffff;
-  }
+.daily-item {
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  height: 40px;
+  margin: 5px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  font-size: 14px;
+  padding: 5px 20px;
+  font-family: "pp mori";
+}
+
+.icon-small {
+  width: 40px;
+}
+
+.daily-item .day {
+  cursor: inherit;
+  color: #000000;
+  flex: 1 1;
+  font-weight: 600;
+  margin-left: 15px;
+  font-family: "pp mori";
+}
+
+.description {
+  cursor: inherit;
+  flex: 1 1;
+  margin-right: 15px;
+  text-align: right;
+}
+
+.min-max {
+  color: #000000;
+}
+
+.daily-details-grid {
+  grid-row-gap: 0;
+  grid-column-gap: 15px;
+  -webkit-column-gap: 15px;
+  column-gap: 15px;
+  display: grid;
+  flex: 1 1;
+  grid-template-columns: auto auto;
+  padding: 5px 15px;
+  row-gap: 0;
+  backdrop-filter: blur(2px);
+
+  border-radius: 12px;
+  font-size: 1.2rem;
+  mix-blend-mode: hard-light;
+}
+
+.daily-details-grid-item {
+  align-items: center;
+  display: flex;
+  height: 30px;
+  justify-content: space-between;
+}
+
+.daily-details-grid-item label:first-child {
+  color: #f8f8f8;
+}
+
+.daily-details-grid-item label:last-child {
+  color: #ffffff;
+}

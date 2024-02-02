@@ -23,8 +23,8 @@ function App() {
       .then(async (response) => {
         const weatherResponse = await response[0].json();
         const forcastResponse = await response[1].json();
-        console.log(weatherResponse)
-        console.log(forcastResponse)
+        console.log(weatherResponse);
+        console.log(forcastResponse);
 
         setCurrentWeather({ city: searchData.label, ...weatherResponse });
         setForecast({ city: searchData.label, ...forcastResponse });
@@ -35,11 +35,10 @@ function App() {
   return (
     <div className="container">
       <div className="Home">
-      <Search onSearchChange={handleOnSearchChange} />
-      {currentWeather && <CurrentWeather data={currentWeather} />}
-      {forecast && <Forecast data={forecast} />}
+        <Search onSearchChange={handleOnSearchChange} />
+        {currentWeather && <CurrentWeather data={currentWeather} />}
+        {forecast && <Forecast data={forecast} />}
       </div>
-   
     </div>
   );
 }

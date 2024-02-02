@@ -2,25 +2,23 @@ import React, { useState } from "react";
 import "./current-weather.css";
 
 const CurrentWeather = ({ data }) => {
+  const celsius = Math.round(data.main.temp);
+  const fahrenheit = Math.round((celsius * 9) / 5) + 32;
+  console.log(fahrenheit);
 
-    const celsius= Math.round(data.main.temp);
-    const fahrenheit =Math.round(celsius * 9/5) + 32;
-    console.log(fahrenheit);
+  const [showFirstContent, setShowFirstContent] = useState(true);
 
-    const [showFirstContent, setShowFirstContent] = useState(true);
-    
-      
-        const toggleContent = () => {
-          setShowFirstContent((prevShowFirstContent) => !prevShowFirstContent);
-        };
+  const toggleContent = () => {
+    setShowFirstContent((prevShowFirstContent) => !prevShowFirstContent);
+  };
 
-
-    
   return (
     <div className="weather">
-         <div>
-      <button className="tooglebutton" onClick={toggleContent}>Convert</button>
-    </div>
+      <div>
+        <button className="tooglebutton" onClick={toggleContent}>
+          Convert
+        </button>
+      </div>
       <div className="top">
         <div>
           <p className="city">{data.city}</p>
@@ -31,10 +29,16 @@ const CurrentWeather = ({ data }) => {
           className="weather-icon"
           src={`icons/${data.weather[0].icon}.png`}
         />
-         {/* {showFirstContent ? <div>{celsius}</div> : <div>{fahrenheit}</div>} */}
+        {/* {showFirstContent ? <div>{celsius}</div> : <div>{fahrenheit}</div>} */}
       </div>
       <div className="bottom">
-        <p className="temperature">{showFirstContent? <div>{celsius}°C</div> : <div>{fahrenheit}°F</div> }</p>
+        <p className="temperature">
+          {showFirstContent ? (
+            <div>{celsius}°C</div>
+          ) : (
+            <div>{fahrenheit}°F</div>
+          )}
+        </p>
         <div className="details">
           <div className="parameter-row">
             <span className="parameter-label">Details</span>
