@@ -1,5 +1,5 @@
 
-# mirARR Frontend Intern Assignment
+# MIRRAR Frontend Intern Assignment
 # Weather App 
 
 https://weather-app-assignment-mxt8gb123-samrudhmgs-projects.vercel.app/
